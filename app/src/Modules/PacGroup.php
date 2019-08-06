@@ -17,7 +17,7 @@ class PacGroup extends Connection{
   public function trxCode(){
 
     $query=
-    "SELECT DISTINCT(TRX_CODE) FROM `pit-analytics-2019.PIT_SISTEMAS.PAC_GROUP` ORDER BY(TRX_CODE)";
+    "SELECT TRX_CODE, DESCRIPTION FROM `pit-analytics-2019.PIT_SISTEMAS.PAC_GROUP` ORDER BY(TRX_CODE)";
     return $this->bigquery->query($query);
 
   }
