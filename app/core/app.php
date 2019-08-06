@@ -28,7 +28,7 @@ $app->get('/pac', \App\Controllers\PacController::class.':index');
 $app->get('/bill-no', \App\Controllers\PacController::class.':billNo');
 $app->get('/month', \App\Controllers\PacController::class.':month');
 $app->get('/date', \App\Controllers\PacController::class.':date');
-$app->get('/trx-code', \App\Controllers\PacController::class.':trxCode');
+//$app->get('/trx-code', \App\Controllers\PacController::class.':trxCode');
 $app->get('/room', \App\Controllers\PacController::class.':room');
 $app->get('/fiscal-bill-no', \App\Controllers\PacController::class.':fiscalBillNo');
 //
