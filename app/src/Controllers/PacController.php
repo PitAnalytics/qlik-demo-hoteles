@@ -129,51 +129,6 @@ class PacController extends Controller{
 
     }
 
-    public function taxInclusiveYn($request,$response,$args){
-
-        $index=$this->modules['pac']->taxInclusiveYn();
-
-        //imprimimos resultado como json con cabeceras
-        $response1 = $response->withJson($index,201);
-        $response2 = $response1
-        ->withHeader('Access-Control-Allow-Origin', '*')
-        ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
-
-        //imprimimos respuesta al retornarla
-        return $response2;
-
-    }
-
-    public function tcGroup($request,$response,$args){
-
-        $index=$this->modules['pac']->tcGroup();
-
-        //imprimimos resultado como json con cabeceras
-        $response1 = $response->withJson($index,201);
-        $response2 = $response1
-        ->withHeader('Access-Control-Allow-Origin', '*')
-        ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
-
-        //imprimimos respuesta al retornarla
-        return $response2;
-
-    }
-
-    public function tcSubgroup($request,$response,$args){
-
-        $index=$this->modules['pac']->tcSubgroup();
-
-        //imprimimos resultado como json con cabeceras
-        $response1 = $response->withJson($index,201);
-        $response2 = $response1
-        ->withHeader('Access-Control-Allow-Origin', '*')
-        ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
-
-        //imprimimos respuesta al retornarla
-        return $response2;
-
-    }
-
 }
 
 ?>

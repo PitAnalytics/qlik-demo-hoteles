@@ -53,27 +53,6 @@ class Pac extends Connection{
 
     }
 
-    public function taxInclusiveYn(){
-
-        $query="SELECT DISTINCT(TAX_INCLUSIVE_YN) AS TAX_INCLUSIVE_YN FROM `pit-analytics-2019.PIT_SISTEMAS.Pac_2018_Lte` ORDER BY TAX_INCLUSIVE_YN;";
-        return $this->bigquery->query($query);
-
-    }
-
-    public function tcGroup(){
-
-        $query="SELECT DISTINCT(TC_GROUP) AS TC_GROUP FROM `pit-analytics-2019.PIT_SISTEMAS.Pac_2018_Lte` ORDER BY TC_GROUP;";
-        return $this->bigquery->query($query);
-
-    }
-
-    public function tcSubgroup(){
-
-        $query="SELECT DISTINCT(TC_SUBGROUP) AS TC_SUBGROUP FROM `pit-analytics-2019.PIT_SISTEMAS.Pac_2018_Lte` ORDER BY TC_SUBGROUP;";
-        return $this->bigquery->query($query);
-
-    }
-
 }
 
 ?>

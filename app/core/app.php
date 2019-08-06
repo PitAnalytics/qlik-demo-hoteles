@@ -30,10 +30,9 @@ $app->get('/date', \App\Controllers\PacController::class.':date');
 $app->get('/trx-code', \App\Controllers\PacController::class.':trxCode');
 $app->get('/room', \App\Controllers\PacController::class.':room');
 $app->get('/fiscal-bill-no', \App\Controllers\PacController::class.':fiscalBillNo');
-$app->get('/tax-inclusive-yn', \App\Controllers\PacController::class.':taxInclusiveYn');
-$app->get('/tc-group', \App\Controllers\PacController::class.':tcGroup');
-$app->get('/tc-subgroup', \App\Controllers\PacController::class.':tcSubgroup');
 //
+$app->get('/fiscal-bill-no', \App\Controllers\PacController::class.':fiscalBillNo');
+
 /******************/
 /****EJECUTAMOS****/
 /******************/
