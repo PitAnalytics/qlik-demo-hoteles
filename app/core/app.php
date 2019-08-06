@@ -1,4 +1,5 @@
 <?php
+//
 /************************/
 /*****PSR-7-INTERFACE****/
 /************************/
@@ -31,14 +32,15 @@ $app->get('/trx-code', \App\Controllers\PacController::class.':trxCode');
 $app->get('/room', \App\Controllers\PacController::class.':room');
 $app->get('/fiscal-bill-no', \App\Controllers\PacController::class.':fiscalBillNo');
 //
-$app->get('/group/tc-group', \App\Controllers\PacController::class.':tcGroup');
-$app->get('/group/trx-code', \App\Controllers\PacController::class.':trxCode');
-$app->get('/group/tc-subgroup', \App\Controllers\PacController::class.':tcSubgroup');
-$app->get('/group/tax-inclusive-yn', \App\Controllers\PacController::class.':taxInclusiveYn');
-
+$app->get('/group/tc-group', \App\Controllers\PacGroupController::class.':tcGroup');
+$app->get('/group/trx-code', \App\Controllers\PacGroupController::class.':trxCode');
+$app->get('/group/tc-subgroup', \App\Controllers\PacGroupController::class.':tcSubgroup');
+$app->get('/group/tax-inclusive-yn', \App\Controllers\PacGroupController::class.':taxInclusiveYn');
+//
 /******************/
 /****EJECUTAMOS****/
 /******************/
+//
 $app->run();
 
 ?>
