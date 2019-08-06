@@ -35,6 +35,15 @@ $container['pac']=function($container){
     };
 
 };
+$container['pac-group']=function($container){
+
+    return function($config){
+
+        return new App\Modules\PacGroup($config);
+
+    };
+
+};
 $container['hotel']=function($container){
 
     return function($config){
