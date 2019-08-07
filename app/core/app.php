@@ -35,7 +35,6 @@ $app->get('/fiscal-bill-no', \App\Controllers\PacController::class.':fiscalBillN
 $app->get('/group/tc-group', \App\Controllers\PacGroupController::class.':tcGroup');
 $app->get('/group/trx-code', \App\Controllers\PacGroupController::class.':trxCode');
 $app->get('/group/tc-subgroup', \App\Controllers\PacGroupController::class.':tcSubgroup');
-$app->get('/group/tax-inclusive-yn', \App\Controllers\PacGroupController::class.':taxInclusiveYn');
 //
 /******************/
 /****EJECUTAMOS****/

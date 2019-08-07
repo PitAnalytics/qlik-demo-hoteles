@@ -30,14 +30,6 @@ class PacGroup extends Connection{
 
   }
 
-  public function taxInclusiveYn(){
-
-    $query=
-    "SELECT DISTINCT(TAX_INCLUSIVE_YN) FROM `pit-analytics-2019.PIT_SISTEMAS.PAC_GROUP` ORDER BY(TAX_INCLUSIVE_YN)";
-    return $this->bigquery->query($query);
-
-  }
-
 }
 
 ?>

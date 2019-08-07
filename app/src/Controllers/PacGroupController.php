@@ -63,20 +63,7 @@ class PacGroupController extends Controller{
 
   }
 
-  public function taxInclusiveYn($request,$response,$args){
 
-    $index=$this->modules['pac-group']->taxInclusiveYn();
-
-    //imprimimos resultado como json con cabeceras
-    $response1 = $response->withJson($index,201);
-    $response2 = $response1
-    ->withHeader('Access-Control-Allow-Origin', '*')
-    ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
-
-    //imprimimos respuesta al retornarla
-    return $response2;
-
-  }
 
 }
 
