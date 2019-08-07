@@ -19,7 +19,6 @@ class Pac extends Connection{
         FISCAL_BILL_NO,
         TRAN_ACTION_ID,
         ROOM,
-        TAX_INCLUSIVE_YN,
         CAST(SUBSTR(BUSINESS_DATE,6,2)AS INT64) AS MONTH
       FROM
         `pit-analytics-2019.PIT_SISTEMAS.Pac_2018_Lte`
